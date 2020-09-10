@@ -1,0 +1,19 @@
+# Instructions only valid in console
+compute count in object;  
+compute count in rel_nexto; 
+
+
+# Instructions valid in grakn console and workbase
+match $x sub thing; get;
+
+match 
+	$obj isa object,
+		has name $na,
+	$r1 ($z,$y) isa rel_nexto; 
+	$r2 ($x,$w) isa rel_topunder; 
+	$r3 ($v,$u) isa rel_inhas; 
+	$r4 ($s,$r) isa rel_abelow; 
+	$r5 ($q,$p) isa rel_befront; 
+get;
+
+match $obj isa object,has name $na; $r1 ($z,$y) isa rel_nexto; $r2 ($x,$w) isa rel_topunder; 	$r3 ($v,$u) isa rel_inhas; get;

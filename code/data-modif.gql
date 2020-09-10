@@ -1,0 +1,231 @@
+insert $obj0 isa object, 
+	has name "bed",
+    has softness "high",
+    has building_mat "cloth" ,
+    has more_likely_color "white";
+
+insert $obj2 isa object, 
+	has name "alarm_clock",
+    has softness "high",
+    has building_mat "metal",
+    has more_likely_color "black";
+
+insert $obj3 isa object, 
+	has name "blinds",
+    has softness "medium",
+    has building_mat "plastic",
+    has more_likely_color "blue";
+
+insert $obj4 isa object, 
+	has name "mirror",
+    has softness "low",
+    has building_mat "glass",
+    has more_likely_color "none";
+
+insert $obj5 isa object, 
+	has name "wardrobe",
+    has softness "medium",
+    has building_mat "wood",
+    has more_likely_color "brown";
+
+insert $obj6 isa object, 
+	has name "dresser",
+    has softness "medium",
+    has building_mat "wood",
+    has more_likely_color "brown";
+
+insert $obj7 isa object, 
+	has name "footboard",
+    has softness "high",
+    has building_mat "cloth",
+    has more_likely_color "red";
+	
+
+insert $obj8 isa object, 
+	has name "headboard",
+    has softness "medium",
+    has building_mat "wood",
+    has more_likely_color "brown";
+	
+
+insert $obj9 isa object, 
+	has name "nigth_table",
+    has softness "medium",
+    has building_mat "wood",
+    has more_likely_color "white";
+	
+
+insert $obj10 isa object, 
+	has name "pillow",
+    has softness "high",
+    has building_mat "cloth",
+    has more_likely_color "white";
+	
+
+insert $obj11 isa object, 
+	has name "switch",
+    has softness "medium",
+    has building_mat "metal",
+    has more_likely_color "gold";
+	
+
+insert $obj12 isa object, 
+	has name "carpet";
+	
+
+insert $obj13 isa object, 
+	has name "lamp",
+    has softness "medium",
+    has building_mat "plastic",
+    has more_likely_color "white";
+	
+
+insert $obj14 isa object, 
+	has name "teddies",
+    has softness "high",
+    has building_mat "plush",
+    has more_likely_color "orange";
+
+
+insert $obj15 isa object, 
+	has name "door",
+    has softness "low",
+    has building_mat "wood",
+    has more_likely_color "brown";
+	
+insert $obj16 isa object, 
+	has name "TV",
+    has softness "low",
+    has building_mat "plastic",
+    has more_likely_color "black";
+	
+
+insert $obj17 isa object, 
+	has name "window",
+    has softness "medium",
+    has building_mat "glass",
+    has more_likely_color "none";
+
+
+match
+	$o isa object, has name "bed";
+	$b isa object, has name "pillow";
+insert $rel (in_:$o,has_:$b) isa rel_inhas;
+
+match
+	$o isa object, has name "bed";
+	$b isa object, has name "teddies";
+insert $rel (in_:$o,has_:$b) isa rel_inhas;
+
+match
+	$o isa object, has name "carpet";
+	$b isa object, has name "teddies";
+insert $rel (in_:$o,has_:$b) isa rel_inhas;
+
+match
+	$o isa object, has name "footboard";
+	$b isa object, has name "carpet";
+insert $rel (above:$o,below:$b) isa rel_abelow;
+
+match
+	$o isa object, has name "bed";
+	$b isa object, has name "footboard";
+insert $rel (ontop:$o,under:$b) isa rel_topunder;
+
+match
+	$o isa object, has name "bed";
+	$b isa object, has name "headboard";
+insert $rel (behind:$b,infront:$o) isa rel_befront;
+
+match
+	$o isa object, has name "headboard";
+	$b isa object, has name "nigth_table";
+insert $rel (next_to:$o,next_to:$b) isa rel_nexto;
+
+match
+	$o isa object, has name "nigth_table";
+	$b isa object, has name "lamp";
+insert $rel (above:$b,below:$o) isa rel_abelow;
+
+match
+	$o isa object, has name "lamp";
+	$b isa object, has name "alarm_clock";
+insert $rel (next_to:$o,next_to:$b) isa rel_nexto;
+
+match
+	$o isa object, has name "lamp";
+	$b isa object, has name "alarm_clock";
+insert $rel (next_to:$o,next_to:$b) isa rel_nexto;
+
+match
+	$o isa object, has name "bed";
+	$b isa object, has name "dresser";
+insert $rel (behind:$o,infront:$b) isa rel_befront;
+
+match
+	$o isa object, has name "alarm_clock";
+	$b isa object, has name "dresser";
+insert $rel (in_:$b,has_:$o) isa rel_inhas;
+
+match
+	$o isa object, has name "dresser";
+	$b isa object, has name "TV";
+insert $rel (above:$b,below:$o) isa rel_abelow;
+
+match
+	$o isa object, has name "dresser";
+	$b isa object, has name "mirror";
+insert $rel (above:$b,below:$o) isa rel_abelow;
+
+match
+	$o isa object, has name "desser";
+	$b isa object, has name "door";
+insert $rel (next_to:$o,next_to:$b) isa rel_nexto;
+
+match
+	$o isa object, has name "door";
+	$b isa object, has name "switch";
+insert $rel (next_to:$o,next_to:$b) isa rel_nexto;
+
+match
+	$o isa object, has name "door";
+	$b isa object, has name "wardrobe";
+insert $rel (next_to:$o,next_to:$b) isa rel_nexto;
+
+match
+	$o isa object, has name "wardrobe";
+	$b isa object, has name "mirror";
+insert $rel (next_to:$o,next_to:$b) isa rel_nexto;
+
+match
+	$o isa object, has name "door";
+	$b isa object, has name "window";
+insert $rel (behind:$o,infront:$b) isa rel_befront;
+
+match
+	$o isa object, has name "window";
+	$b isa object, has name "blinds";
+insert $rel (behind:$o,infront:$b) isa rel_befront;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

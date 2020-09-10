@@ -1,0 +1,36 @@
+define 
+rel_abelow sub relation, 
+	relates above,
+	relates below;
+
+rel_nexto sub relation,
+	relates next_to,
+	relates next_to;	
+
+rel_befront sub relation,
+	relates behind,
+	relates infront;
+
+rel_topunder sub relation,
+	relates ontop,
+	relates under;
+
+rel_inhas sub relation,
+	relates in_,
+	relates has_;
+
+object sub entity,
+	plays above,
+	plays below,
+	plays next_to,
+	plays behind,
+	plays infront,
+	plays ontop,
+	plays under,
+	plays in_,
+	plays has_,
+	has name;
+	
+name sub attribute,
+	datatype string;
+
