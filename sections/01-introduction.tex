@@ -1,6 +1,6 @@
 \section{Introduction}
-Within the past ten years, object recognition, a domain of artificial 
-intelligence, has gained importance due to the significant development of 
+Within the past ten years, object recognition
+has gained importance due to the significant development of 
 hardware (CPUs and GPUs with higher performance and speed) and thanks to the 
 constant progress of computer science (increasingly sophisticated machine 
 learning, and deep learning algorithms). Object detection involves two main 
@@ -14,13 +14,13 @@ tasks: i) image classification and ii) object localization.
 % i) la clasificación de imágenes y 
 % ii) la  localización de objetos.
 
-First, image classification is intended to predict what kind of objects are in 
-an image. On the other hand, object localization is about locating the object 
-with a bounding box. In general, object recognition is done with artificial 
+Image classification is intended to predict what kind of objects are in 
+an image and object localization is about locating the object 
+with a bounding box. In general, object recognition uses artificial 
 neural networks, which despite being a powerful tool, they have the disadvantage 
-of becoming slow due to the large number (millions) of node networks 
-communicating with each other. Hence, it is been necessary to propose possible 
-solutions to reduce processing time, such as knowledge graphs.
+of becoming slow through the large number (millions) of node networks 
+communicating with each other. Hence, it is been necessary to propose different 
+approaches to reduce processing time, thats why we address knowledge graphs.
 % En primer lugar, la clasificación de imágenes tiene como objetivo predecir 
 % la clase de objetos que hay en una imagen. Por otra parte, la localización de 
 % objetos se refiere a indicar la localización de los objetos mediante una caja 
@@ -33,21 +33,17 @@ solutions to reduce processing time, such as knowledge graphs.
 % procesamiento, como los grafos de conocimiento.
 
 A knowledge graph is a set of organized information, where each vertex 
-represents the data which can be accessed through an edge. In the same way, 
-in \cite{Barnard} it is explained that a knowledge graph if an encyclopedia 
-that machines can read. So basically it is an organized knowledge in such a 
-way that machines can understand and extract information easily.
+represents the specific data which can be accessed through a specific edge. 
 % % Un grafo de conocimiento (KG) es un conjunto de información organizada, 
 % donde cada vértice representa datos a los que se podrán acceder a través de 
 % una arista. De la misma manera, \cite{Barnard} explica que un grafo de 
 % conocimiento es una enciclopedia que las máquinas puede leer. Por lo que, 
 % básicamente se trata de un conocimiento organizado de tal manera que una 
 % máquina puede entender y extraer la información de forma fácil.
-
-On the other hand, \cite{Saorin} points out that a knowledge graph is integrated
-into a database that when joined, the graph is enriched and increases its 
-significance, which allows entities and properties to be defined, which are 
-typified and classified, then model them in your domain of knowledge. By having 
+On the other hand, \cite{Saorin} points out that a knowledge graph connected 
+with a database enriches and increases its
+significance, for that reason entities and properties can be defined, thus those 
+properties get classified and model  into our domain of knowledge. By having 
 the domain to which it belongs, it allows another graph to connect it to another 
 domain model.
 % Por otro lado, \cite{Saorin} señala que un grafo de conocimiento está 
@@ -81,12 +77,12 @@ semantic way:
 \item References to similar searches.
 \end{itemize}
 
-This paper seeks to expose the use of a knowledge graph as a tool to 
+This paper seeks to communicate the use of a knowledge graph as a tool to 
 characterize the semantic relationships that exist between objects existing 
 in a certain closed environment of human occupation, such as a room in a home, 
-office, and other places of rest or work. To achieve this purpose, the model 
-made up of three components was taken as a basis: object1-predicate-object2. 
-For the predicate, the relation of spatiality was considered as above, below, 
+office, and other places of rest or work. To achieve this purpose, we use a 
+basic model with three components : object1-predicate-object2. 
+In predicate we use spatial relations such as: above, below, 
 above, beside, in, has, in front and others.
 % En este artículo se busca exponer el uso de un grafo de conocimiento como 
 % herramienta para la caracterización de las relaciones semánticas que existen 

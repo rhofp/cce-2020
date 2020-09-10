@@ -32,10 +32,10 @@ made up of two parts, as shown in Figure \ref{fig:arch}: \textit{Grakn}
 \end{figure}
 
 In general, \textit{Grakn} can be seen as a distributed, hyper-relational 
-database that uses an ontology\footnote{It should not be seen from the side 
-of philosophy, but as a branch of computer science.} intuitive\footnote{Refers 
-to the definition of types, properties and relationships between existing 
-entities in a given context.} to model complex data, which serves as a 
+database that uses intuitive\footnote{Refers to the definition of types, 
+properties and relationships between existing entities in a given context.} 
+ontology\footnote{It should not be seen from the side of philosophy, but as a 
+branch of computer science.}  to model complex data, which serves as a 
 knowledge base for cognitive systems \cite{dbengines}. On the other side, 
 \textit{Graql} is a knowledge-oriented declarative graph query language that 
 retrieves knowledge explicitly.
@@ -49,7 +49,7 @@ retrieves knowledge explicitly.
 % es un lenguaje de consulta de grafos declarativo orientado al conocimiento 
 % (Knowledge-oriented) que recupera conocimiento de manera explícita.
 
-Grakn is designed for integration with other technologies that allow it to 
+Grakn was designed to be integrated with other technologies that allow it to 
 function in a distributed manner. In addition, it is a great complement to 
 Natural Language Processing (NLP) and Machine Learning (ML) systems 
 \cite{grakn-youtube}. It is also important to note that the data is stored in 
@@ -62,7 +62,7 @@ scale, and simplicity in design.
 % almancenados en Apache Cassandra, una base de datos no relacional que se 
 % distingue por su rapidez, escalamiento horizontal y simplicidad en el diseño.
 
-Grakn from its creation in 2016 to date is used by several transnational 
+Since Grakn creation in 2016 to present-day, it is use by several international 
 companies, such as: Google and Cisco; and by institutions like MIT, OpenCTI, 
 and Cares Genetics. Table \ref{fig:grakn-car} summarizes the most important 
 features reported by the db-engines \cite{dbengines} site. A more detailed 
@@ -135,16 +135,16 @@ and \texttt{apt}.
 % como RPM Package Manager}) y \texttt{apt}.
 
 Besides, Grakn is also available for X OS operative system,  through 
-\texttt{brew} package manager. For this paper, the testing implementations 
-were made using CentOS 8.2 and Manjaro Linux 20.0.
+\texttt{brew} package manager. The testing implementations presented in the 
+paper were made using CentOS 8.2 and Manjaro Linux 20.0.
 % Además, Grakn está disponible también para los sistemas operativos X OS, a 
 % través del gestor de paquetes \texttt{brew}. Para este proyecto con el fin de 
 % realizar las pruebas de implementación se utilizaron CentOS 8.2 y Manjaro 
 % Linux 20.0.
 
 Another important point is that Grakn works similarly to database management 
-systems, that is, services must be started, users must be created, workspaces 
-must be created, among others. In Grakn the abstract models that encapsulate 
+systems, which means we must start services, create users, workspaces, 
+among others. In Grakn the abstract models that encapsulate 
 the entities of a particular problem are known as \textit{Keyspace}, where the 
 \textit{schemes} that will represent the data of the case study are defined.
 % Es importante destacar que Grakn funciona de manera similar a los sistemas 
@@ -158,7 +158,7 @@ An \textit{scheme} is an inherent part of the knowledge graph that describes
 what data is like and how it can be structured. It can be represented by an 
 Entity-Relationship diagram. On the other side, Grakn has various types that 
 made up the core system and provide the vocabulary necessary to describe any 
-case study. Among the main types that Grakn handles, the following stand out:
+case study. The most important Grakn data types are:
 % Un \textit{esquema} es un parte inherente del grafo de conocimiento que 
 % describe cómo son los datos y cómo pueden ser estructurados. Dicho esquema 
 % se puede representar por medio de un diagrama entidad-relación. En Grakn 
@@ -182,7 +182,7 @@ case study. Among the main types that Grakn handles, the following stand out:
 \end{itemize}
 
 Likewise, it is important to mention that the query language \textit{Graql} 
-has the following characteristics, which were useful for this work.
+has the following characteristics:
 % Asimismo, es importante mencionar que el lenguaje de consultas \textit{Graql} 
 % presenta las siguientes características, mismas que fueron de utilidad para 
 % este trabajo.
@@ -211,8 +211,8 @@ structure: \texttt{object1--predicate--object2} proposed by \cite{Cewu}, who
 points out that visual relationships capture a wide variety of interactions 
 between pairs of objects in images. Therefore, it is recommended to extract the 
 possible relationships that may exist, in order to reduce them and work more 
-efficiently. Besides, the relations between each pair of objects are required 
-to have a predicate individually, and based on this a classification is made 
+efficiently. Besides, the relations between each pair of objects must 
+have a individual predicate, and based on this a classification is made 
 to generate a relation. The most common types of predicates are classified 
 by an action, space, a preposition, a comparison, or a verb as seen in Figure 
 \ref{fig:predaCar}.
@@ -235,9 +235,9 @@ by an action, space, a preposition, a comparison, or a verb as seen in Figure
     \label{fig:predaCar}
 \end{figure}
 
-Based on the above, in this work, the characterization of objects by 
-spatial predicates was performed, since the objects found in a certain space 
-of human occupation, such as a room, are static. Whereas, in this case, 
+Based on the above, We use the spatial predicates for object characterization, 
+since the objects belogns to certain human occupation space, 
+such as a room, are static. Whereas, in this case, 
 predicates based on verbs (actions) were not useful. In the Figures from 
 \ref{fig:abelow} to \ref{fig:topUnder} the relationships used to make the 
 knowledge graph are shown.
@@ -303,8 +303,8 @@ object in order to better describe the relationship.
     \label{fig:object}
 \end{figure}
 
-Before implementing the knowledge graph with Grakn, we did a draft of it, 
-in order to visually identify the relationships that must be created through 
+Before implementing the knowledge graph with Grakn, we drafted it, 
+to visually identify the relationships that must be created through 
 the tool. This conceptual design is seen in Figure \ref{fig:grafo}.
 % Antes de implementar el grafo de conocimiento a través de Grakn, se realizó 
 % un bosquejo del mismo con la finalidad de identificar de manera visual las 
