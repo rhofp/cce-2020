@@ -1,22 +1,110 @@
 \section{Background}
 
-All recent efforts to work with object recognition successfully can be encompassed in two large model families. First, there is the use of algorithms related to convolutional neural networks (CNN), and second, there is the YOLO (You Only Look Once) approach.
-% Todos los esfuerzos recientes para el reconocimiento de objetos de manera satisfactoria se pueden englobar en dos grandes familias de modelos. En primer lugar se tiene la utilización de algoritmos relacionados con redes neuronales convolucionales (CNN), y en segundo lugar se tiene el enfoque YOLO (You Only Look Once).
+All recent efforts to work with object recognition successfully can be 
+encompassed in two large model families. First, there is the use of algorithms 
+related to convolutional neural networks (CNN), and second, there is the YOLO 
+(You Only Look Once) approach.
+% Todos los esfuerzos recientes para el reconocimiento de objetos de manera 
+% satisfactoria se pueden englobar en dos grandes familias de modelos. En primer 
+% lugar se tiene la utilización de algoritmos relacionados con redes neuronales 
+% convolucionales (CNN), y en segundo lugar se tiene el enfoque YOLO (You Only 
+% Look Once).
 
-Models based on convolutional neural networks, as the name implies, use neural networks with an extra layer called the convolution layer, which has the characteristic of choosing or detecting patterns and making sense of them. Such pattern detection is what makes CNN useful for image analysis. CNN works through filters, which allow detecting patterns such as circles, edges, squares, lines, among others. The famous CNN-based models are: R-CNN, Fast R-CNN, and Faster R-CNN.
-% Los modelos basados en redes neuronales convolucionales, como su nombre lo indica, utilizan redes neuronales con una capa extra llamada capa de convolución, la cual tiene la característica de escoger o detectar patrones y darles sentido. Dicha detección de patrones es lo que hace que CNN sea útil para el análisis de imágenes. Las CNN trabajan a través de filtros, los cuales permiten detectar patrones como círculos, bordes, cuadrados, líneas, entre otros. Los modelos famosos basados en CNN son: R-CNN, Fast R-CNN y Faster R-CNN.
+Models based on convolutional neural networks, as the name implies, use neural 
+networks with an extra layer called the convolution layer, which has the 
+characteristic of choosing or detecting patterns and making sense of them. 
+Such pattern detection is what makes CNN useful for image analysis. CNN works 
+through filters, which allow detecting patterns such as circles, edges, squares, 
+lines, among others. The famous CNN-based models are: R-CNN, Fast R-CNN, and 
+Faster R-CNN.
+% Los modelos basados en redes neuronales convolucionales, como su nombre lo 
+% indica, utilizan redes neuronales con una capa extra llamada capa de 
+% convolución, la cual tiene la característica de escoger o detectar patrones 
+% y darles sentido. Dicha detección de patrones es lo que hace que CNN sea útil 
+% para el análisis de imágenes. Las CNN trabajan a través de filtros, los cuales 
+% permiten detectar patrones como círculos, bordes, cuadrados, líneas, entre 
+% otros. Los modelos famosos basados en CNN son: R-CNN, Fast R-CNN y Faster 
+% R-CNN.
 
-On the other side, YOLO, currently supported by DarkNet, is a real-time object detection system. It works by dividing the image into cells, where each cell is tasked with predicting a bounding box that involves 3 elements: X and Y coordinates, width and height dimensions, and a confidence value. With these elements it is possible to try to predict the objects found in the image, involving a single trained neural network, hence the name YOLO. In recent years, improvements have been made to this model in order to make it faster and more reliable. These improvements are called YOLO versions 2 and 3.
-% Por otra parte, YOLO, actualmente soportado por DarkNet, es un sistema de detección de objetos en tiempo real. Funciona dividiendo la imagen en celdas, donde cada celda tiene la tarea de predecir un cuadro delimitador que involucra 3 elementos: coordenadas X y Y, las dimensiones ancho y alto, y un valor de confianza. Con estos elementos se puede intentar predecir los objetos que se encuentran en la imagen, involucrando a una sola red neuronal entrenada, de ahí el nombre de YOLO. En los últimos años se le han hecho mejoras a este modelo con la finalidad de hacerlo más rápido y confiable, dichas mejoras llevan por nombre YOLO v2 y YOLO v3.
+On the other side, YOLO, currently supported by DarkNet, is a real-time object 
+detection system. It works by dividing the image into cells, where each cell is 
+tasked with predicting a bounding box that involves 3 elements: X and Y 
+coordinates, width and height dimensions, and a confidence value. With these 
+elements it is possible to try to predict the objects found in the image, 
+involving a single trained neural network, hence the name YOLO. In recent years, 
+improvements have been made to this model in order to make it faster and more 
+reliable. These improvements are called YOLO versions 2 and 3.
+% Por otra parte, YOLO, actualmente soportado por DarkNet, es un sistema de 
+% detección de objetos en tiempo real. Funciona dividiendo la imagen en celdas, 
+% donde cada celda tiene la tarea de predecir un cuadro delimitador que 
+% involucra 3 elementos: coordenadas X y Y, las dimensiones ancho y alto, y un 
+% valor de confianza. Con estos elementos se puede intentar predecir los objetos 
+% que se encuentran en la imagen, involucrando a una sola red neuronal 
+% entrenada, de ahí el nombre de YOLO. En los últimos años se le han hecho 
+% mejoras a este modelo con la finalidad de hacerlo más rápido y confiable, 
+% dichas mejoras llevan por nombre YOLO v2 y YOLO v3.
 
-Regarding knowledge graphs, this field began to be known in 2012, thanks to the fact that Google decided to add a semantic improvement to its search engine, called “The Knowledge Graph”. The purpose of this was to answer questions for users through analysis of what words actually mean in a query, rather than analyzing character strings. So, today it is about things and not chains \cite{Barnard}. From this, many companies began to create their own knowledge graphs, such as Amazon, Microsoft, Yahoo, Facebook, among others; that drive semantic searches and enable better data handling, with better data processing and smarter outputs (deliveries).
-% Con respecto a los grafos de conocimiento, este campo empezó a ser conocido en 2012, gracias que Google decidió agregar una mejora semántica en su motor de búsqueda, llamado “The Knowledge Graph”. El objetivo de este fue responder preguntas para los usuarios a través del análisis de lo que realmente significan las palabras en una consulta, en lugar de analizar cadenas de caracteres. Así, hoy en día se trata de cosas y no de cadenas \cite{Barnard}. A partir de esto, muchas compañías comenzaron a crear sus propios grafos de conocimientos, como lo Amazon, Microsoft, Yahoo, Facebook, entre otras; que impulsan las búsquedas semánticas y permiten un mejor manejo de los datos, con un mejor procesamiento de datos y salidas (entregas) más inteligentes.
+Regarding knowledge graphs, this field began to be known in 2012, thanks to 
+the fact that Google decided to add a semantic improvement to its search 
+engine, called “The Knowledge Graph”. The purpose of this was to answer 
+questions for users through analysis of what words actually mean in a query, 
+rather than analyzing character strings. So, today it is about things and not 
+chains \cite{Barnard}. From this, many companies began to create their own 
+knowledge graphs, such as Amazon, Microsoft, Yahoo, Facebook, among others; 
+that drive semantic searches and enable better data handling, with better 
+data processing and smarter outputs (deliveries).
+% Con respecto a los grafos de conocimiento, este campo empezó a ser conocido 
+% en 2012, gracias que Google decidió agregar una mejora semántica en su motor 
+% de búsqueda, llamado “The Knowledge Graph”. El objetivo de este fue responder 
+% preguntas para los usuarios a través del análisis de lo que realmente 
+% significan las palabras en una consulta, en lugar de analizar cadenas de 
+% caracteres. Así, hoy en día se trata de cosas y no de cadenas \cite{Barnard}.
+% A partir de esto, muchas compañías comenzaron a crear sus propios grafos de 
+% conocimientos, como lo Amazon, Microsoft, Yahoo, Facebook, entre otras; que 
+% impulsan las búsquedas semánticas y permiten un mejor manejo de los datos, 
+% con un mejor procesamiento de datos y salidas (entregas) más inteligentes.
 
-At present, there are different knowledge graphs that allow companies to create their own knowledge network, in order to improve their domain and operation. A clear example of success in the use of knowledge graphs at the Prado Museum in Spain, where the information systems of archives, libraries, and collections were exchanged for a knowledge graph. This knowledge graph is a system of representation of contents and digital resources of facts related to authors, works of art, their contents, themes, periods, and styles, as well as any object potentially related to them \cite{Museo del Prado}.
-% En la actualidad, existen diferentes grafos de conocimiento que permiten que las empresas crear su propia red de conocimiento, con el fin de mejorar el dominio y funcionamiento de éstas. Un claro ejemplo de éxito en el uso de grafos de conocimiento en el Museo del Prado de España, donde se cambió los sistemas de información de archivos, bibliotecas y colecciones por un grafo de conocimiento. Este grafo de conocimiento es un sistema de representación de contenidos y recursos digitales de hechos relacionados con los autores, las obras de arte, sus contenidos, temas, épocas y estilos, así como cualquier objeto potencialmente relacionado con éstos \cite{Museo del Prado}.
+At present, there are different knowledge graphs that allow companies to 
+create their own knowledge network, in order to improve their domain and 
+operation. A clear example of success in the use of knowledge graphs at the 
+Prado Museum in Spain, where the information systems of archives, libraries, 
+and collections were exchanged for a knowledge graph. This knowledge graph is 
+a system of representation of contents and digital resources of facts related 
+to authors, works of art, their contents, themes, periods, and styles, as 
+well as any object potentially related to them \cite{Museo del Prado}.
+% En la actualidad, existen diferentes grafos de conocimiento que permiten que 
+% las empresas crear su propia red de conocimiento, con el fin de mejorar el 
+% dominio y funcionamiento de éstas. Un claro ejemplo de éxito en el uso de 
+% grafos de conocimiento en el Museo del Prado de España, donde se cambió los 
+% sistemas de información de archivos, bibliotecas y colecciones por un grafo 
+% de conocimiento. Este grafo de conocimiento es un sistema de representación de 
+% contenidos y recursos digitales de hechos relacionados con los autores, las 
+% obras de arte, sus contenidos, temas, épocas y estilos, así como cualquier 
+% objeto potencialmente relacionado con éstos \cite{Museo del Prado}.
 
-In this sense, bringing together two areas of knowledge, object detection, and knowledge graphs, to achieve a common objective, such as detecting an object with greater precision and using fewer computational resources is one of the great challenges posed in the current decade. Therefore, the works and publications on this topic are scarce.
-% En este sentido, juntar dos área del conocimiento, la detección de objetos y los grafos de conocimiento, para lograr un objetivo en común, como la detección de un objeto con mayor precisión y usando menos recursos computacionales es uno de los grandes retos planteados en la década actual. Por lo que, los trabajos y publicaciones sobre dicho tema son escasos.
+In this sense, bringing together two areas of knowledge, object detection, and 
+knowledge graphs, to achieve a common objective, such as detecting an object 
+with greater precision and using fewer computational resources is one of the 
+great challenges posed in the current decade. Therefore, the works and 
+publications on this topic are scarce.
+% En este sentido, juntar dos área del conocimiento, la detección de objetos y 
+% los grafos de conocimiento, para lograr un objetivo en común, como la 
+% detección de un objeto con mayor precisión y usando menos recursos 
+% computacionales es uno de los grandes retos planteados en la década actual. 
+% Por lo que, los trabajos y publicaciones sobre dicho tema son escasos.
 
-Therefore, the starting point of this paper arises from the interest in the characterization and detection of objects using knowledge graphs \cite{Fang}, which studies computer vision for object recognition, where the objective is to identify a set of regions and thus be able to classify each section with labels. It was possible to obtain new images with unobserved contexts in previously elaborated algorithms. Managing to demonstrate that these existing algorithms could be optimized obtaining a better semantic relationship.
-% Por lo tanto, el punto de partida de este artículo nace a partir del interés de la caracterización y detección de objetos mediante los gráficos de conocimiento \cite{Fang}, que estudia la visión por computadora para el reconocimiento de objetos, donde el objetivo fue identificar un conjunto de regiones y así poder clasificar cada sección con etiquetas. Se logró obtener nuevas imágenes con contextos no observados en algoritmos previamente elaborados. Logrando demostrar que se pudieron optimizar estos algoritmos existentes obteniendo una mejor relación semántica.
+Therefore, the starting point of this paper arises from the interest in the 
+characterization and detection of objects using knowledge graphs \cite{Fang}, 
+which studies computer vision for object recognition, where the objective is 
+to identify a set of regions and thus be able to classify each section with 
+labels. It was possible to obtain new images with unobserved contexts in 
+previously elaborated algorithms. Managing to demonstrate that these existing 
+algorithms could be optimized obtaining a better semantic relationship.
+% Por lo tanto, el punto de partida de este artículo nace a partir del interés 
+% de la caracterización y detección de objetos mediante los gráficos de 
+% conocimiento \cite{Fang}, que estudia la visión por computadora para el 
+% reconocimiento de objetos, donde el objetivo fue identificar un conjunto de 
+% regiones y así poder clasificar cada sección con etiquetas. Se logró obtener 
+% nuevas imágenes con contextos no observados en algoritmos previamente 
+% elaborados. Logrando demostrar que se pudieron optimizar estos algoritmos 
+% existentes obteniendo una mejor relación semántica.

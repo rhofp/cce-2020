@@ -1,18 +1,72 @@
 \section{Introduction}
-Within the past ten years, object recognition, a domain of artificial intelligence, has gained importance due to the significant development of hardware (CPUs and GPUs with higher performance and speed) and thanks to the constant progress of computer science (increasingly sophisticated machine learning, and deep learning algorithms). Object detection involves two main tasks: i) image classification and ii) object localization.
-% En los últimos 10 años, el reconocimiento de objetos, una rama de la inteligencia artificial ha cobrado gran importancia debido al increíble desarrollo del hardware (CPUs y GPUs con un mayor rendimiento y velocidad) y gracias al constante progreso de la ciencia computacional (algoritmos de machine learning y deep learning cada vez más sofisticados). La detección de objetos involucra dos tareas principales: i) la clasificación de imágenes y ii) la localización de objetos.
+Within the past ten years, object recognition, a domain of artificial 
+intelligence, has gained importance due to the significant development of 
+hardware (CPUs and GPUs with higher performance and speed) and thanks to the 
+constant progress of computer science (increasingly sophisticated machine 
+learning, and deep learning algorithms). Object detection involves two main 
+tasks: i) image classification and ii) object localization.
+% En los últimos 10 años, el reconocimiento de objetos, una rama de la 
+% inteligencia artificial ha cobrado gran importancia debido al increíble 
+% desarrollo del hardware (CPUs y GPUs con un mayor rendimiento y velocidad) y 
+% gracias al constante progreso de la ciencia computacional (algoritmos de 
+% machine learning y deep learning cada vez más sofisticados). La detección de 
+% objetos involucra dos tareas principales: 
+% i) la clasificación de imágenes y 
+% ii) la  localización de objetos.
 
-First, image classification is intended to predict what kind of objects are in an image. On the other hand, object localization is about locating the object with a bounding box. In general, object recognition is done with artificial neural networks, which despite being a powerful tool, they have the disadvantage of becoming slow due to the large number (millions) of node networks communicating with each other. Hence, it is been necessary to propose possible solutions to reduce processing time, such as knowledge graphs.
-% En primer lugar, la clasificación de imágenes tiene como objetivo predecir la clase de objetos que hay en una imagen. Por otra parte, la localización de objetos se refiere a indicar la localización de los objetos mediante una caja o cuadro delimitador, generalmente conocido como \textit{bounding box}. En general, para el reconocimiento de objetos se trabaja generalmente con redes neuronales artificiales, las cuales, a pesar de ser una poderosa herramienta, tienen la desventaja de llegar a ser lentas debido a la gran cantidad (millones) de redes de nodos comunicadas entre sí. Por lo cual, ha sido necesario plantear posibles soluciones para disminuir el tiempo de procesamiento, como los grafos de conocimiento.
+First, image classification is intended to predict what kind of objects are in 
+an image. On the other hand, object localization is about locating the object 
+with a bounding box. In general, object recognition is done with artificial 
+neural networks, which despite being a powerful tool, they have the disadvantage 
+of becoming slow due to the large number (millions) of node networks 
+communicating with each other. Hence, it is been necessary to propose possible 
+solutions to reduce processing time, such as knowledge graphs.
+% En primer lugar, la clasificación de imágenes tiene como objetivo predecir 
+% la clase de objetos que hay en una imagen. Por otra parte, la localización de 
+% objetos se refiere a indicar la localización de los objetos mediante una caja 
+% o cuadro delimitador, generalmente conocido como \textit{bounding box}. 
+% En general, para el reconocimiento de objetos se trabaja generalmente con 
+% redes neuronales artificiales, las cuales, a pesar de ser una poderosa 
+% herramienta, tienen la desventaja de llegar a ser lentas debido a la gran 
+% cantidad (millones) de redes de nodos comunicadas entre sí. Por lo cual, ha 
+% sido necesario plantear posibles soluciones para disminuir el tiempo de 
+% procesamiento, como los grafos de conocimiento.
 
-A knowledge graph is a set of organized information, where each vertex represents the data which can be accessed through an edge. In the same way, in \cite{Barnard} it is explained that a knowledge graph if an encyclopedia that machines can read. So basically it is an organized knowledge in such a way that machines can understand and extract information easily.
-% Un grafo de conocimiento (KG) es un conjunto de información organizada, donde cada vértice representa datos a los que se podrán acceder a través de una arista. De la misma manera, \cite{Barnard} explica que un grafo de conocimiento es una enciclopedia que las máquinas puede leer. Por lo que, básicamente se trata de un conocimiento organizado de tal manera que una máquina puede entender y extraer la información de forma fácil.
+A knowledge graph is a set of organized information, where each vertex 
+represents the data which can be accessed through an edge. In the same way, 
+in \cite{Barnard} it is explained that a knowledge graph if an encyclopedia 
+that machines can read. So basically it is an organized knowledge in such a 
+way that machines can understand and extract information easily.
+% % Un grafo de conocimiento (KG) es un conjunto de información organizada, 
+% donde cada vértice representa datos a los que se podrán acceder a través de 
+% una arista. De la misma manera, \cite{Barnard} explica que un grafo de 
+% conocimiento es una enciclopedia que las máquinas puede leer. Por lo que, 
+% básicamente se trata de un conocimiento organizado de tal manera que una 
+% máquina puede entender y extraer la información de forma fácil.
 
-On the other hand, \cite{Saorin} points out that a knowledge graph is integrated into a database that when joined, the graph is enriched and increases its significance, which allows entities and properties to be defined, which are typified and classified, then model them in your domain of knowledge. By having the domain to which it belongs, it allows another graph to connect it to another domain model.
-% Por otro lado, \cite{Saorin} señala que un grafo de conocimiento está integrado a una base de datos que al momento de unirse, el grafo se enriquece e incrementa su significancia, lo cual permite que se definan entidades y propiedades, las cuales se tipifican y clasifican para después modelarlas en su dominio de conocimiento. Al tener el dominio al que pertenece, permite que otro grafo pueda conectarlo a otro modelo de dominio.
+On the other hand, \cite{Saorin} points out that a knowledge graph is integrated
+into a database that when joined, the graph is enriched and increases its 
+significance, which allows entities and properties to be defined, which are 
+typified and classified, then model them in your domain of knowledge. By having 
+the domain to which it belongs, it allows another graph to connect it to another 
+domain model.
+% Por otro lado, \cite{Saorin} señala que un grafo de conocimiento está 
+% integrado a una base de datos que al momento de unirse, el grafo se enriquece 
+% e incrementa su significancia, lo cual permite que se definan entidades y 
+% propiedades, las cuales se tipifican y clasifican para después modelarlas en 
+% su dominio de conocimiento. Al tener el dominio al que pertenece, permite que 
+% otro grafo pueda conectarlo a otro modelo de dominio.
 
-The following example illustrates the previous idea: A system understands that a person being is an entity of soccer player type, and it is linked with soccer sport, which is played with a ball and where there are many competitions. In this way, a knowledge graph may have the following content related in a semantic way:
-% El siguiente ejemplo ilustra la idea anterior: Un sistema entiende que una entidad del tipo futbolista es un ser humano, y que está vinculado con el deporte fútbol, que se juega con una pelota y donde hay una serie de competiciones. Así, un grafo de conocimiento puede contener el siguiente contenido relacionado de forma semántica:
+The following example illustrates the previous idea: A system understands that 
+a person being is an entity of soccer player type, and it is linked with soccer 
+sport, which is played with a ball and where there are many competitions. 
+In this way, a knowledge graph may have the following content related in a 
+semantic way:
+% El siguiente ejemplo ilustra la idea anterior: Un sistema entiende que una 
+% entidad del tipo futbolista es un ser humano, y que está vinculado con el 
+% deporte fútbol, que se juega con una pelota y donde hay una serie de 
+% competiciones. Así, un grafo de conocimiento puede contener el siguiente 
+% contenido relacionado de forma semántica:
 
 \begin{itemize}
 % \item Datos sobre un lugar, una persona o una empresa determinada.
@@ -27,8 +81,30 @@ The following example illustrates the previous idea: A system understands that a
 \item References to similar searches.
 \end{itemize}
 
-This paper seeks to expose the use of a knowledge graph as a tool to characterize the semantic relationships that exist between objects existing in a certain closed environment of human occupation, such as a room in a home, office, and other places of rest or work. To achieve this purpose, the model made up of three components was taken as a basis: object1-predicate-object2. For the predicate, the relation of spatiality was considered as above, below, above, beside, in, has, in front and others.
-% En este artículo se busca exponer el uso de un grafo de conocimiento como herramienta para la caracterización de las relaciones semánticas que existen entre los objetos existentes en un determinado ambiente cerrado de ocupación humana, como una habitación de una vivienda, oficina y otros lugares de descanso o trabajo. Para lograr este propósito se tomó como base el modelo formado por tres componentes: object1-predicate-object2. Para el predicado se consideró la relación de espacialidad como: arriba, abajo, encima, al lado, en, tiene, en frente y otras.
+This paper seeks to expose the use of a knowledge graph as a tool to 
+characterize the semantic relationships that exist between objects existing 
+in a certain closed environment of human occupation, such as a room in a home, 
+office, and other places of rest or work. To achieve this purpose, the model 
+made up of three components was taken as a basis: object1-predicate-object2. 
+For the predicate, the relation of spatiality was considered as above, below, 
+above, beside, in, has, in front and others.
+% En este artículo se busca exponer el uso de un grafo de conocimiento como 
+% herramienta para la caracterización de las relaciones semánticas que existen 
+% entre los objetos existentes en un determinado ambiente cerrado de ocupación 
+% humana, como una habitación de una vivienda, oficina y otros lugares de 
+% descanso o trabajo. Para lograr este propósito se tomó como base el modelo 
+% formado por tres componentes: object1-predicate-object2. Para el predicado 
+% se consideró la relación de espacialidad como: arriba, abajo, encima, al lado, 
+% en, tiene, en frente y otras.
 
-The document is organized as follows, Section 2 presents the background of the degrees of knowledge, their applications are discussed and related works are presented. Section 3 describes the method established as a proposed solution. Section 4 presents the results obtained, based on an example of application in a room, and Section 5 summarizes some conclusions and future work.
-% El documento está organizado de la siguiente manera, la Sección 2 presenta los antecedentes de los grados de conocimiento, se discute sus aplicaciones y se presentan los trabajos relacionados. La Sección 3 describe el método establecido como propuesta de solución. La Sección 4 presenta los resultados obtenidos, basado en un ejemplo de aplicación en una habitación, y la Sección 5 resume algunas conclusiones y trabajo futuro.
+The document is organized as follows, Section 2 presents the background of the 
+degrees of knowledge, their applications are discussed and related works are 
+presented. Section 3 describes the method established as a proposed solution. 
+Section 4 presents the results obtained, based on an example of application in 
+a room, and Section 5 summarizes some conclusions and future work.
+% El documento está organizado de la siguiente manera, la Sección 2 presenta 
+% los antecedentes de los grados de conocimiento, se discute sus aplicaciones y 
+% se presentan los trabajos relacionados. La Sección 3 describe el método 
+% establecido como propuesta de solución. La Sección 4 presenta los resultados 
+% obtenidos, basado en un ejemplo de aplicación en una habitación, y la Sección 
+% 5 resume algunas conclusiones y trabajo futuro.
