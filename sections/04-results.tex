@@ -9,29 +9,16 @@ query.}. However, an object unrelated to others is useless since it can
 not be reached because has no edges, ergo non ontologic relationships. 
 In addition, implicit or explicit information can be extracted through the 
 edges (green lines in the figure).
-% La Figura \ref{fig:grafGra} muestra el grafo de conocimiento generado por 
-% la consulta mostrada en listing \ref{lst:script5}. Se aprecia que los 
-% rectángulos en morado contienen el nombre del objeto y los de fiusha 
-% representan el identificador del objeto. Cada objeto puede tener cero o más 
-% relaciones con otros objetos\footnote{En estricto sentido solo se relacionan 
-% con objetos que son parte de la consulta.}. Sin embargo, un objeto sin relación 
-% con otros no es de utilidad debido a que no se podría llegar a él, puesto que 
-% no tiene aristas, las cuales representan las relaciones ontológicas. Además, 
-% a través de las aristas (líneas en verde) se puede extraer información 
-% implícita o explícita.
 
 \lstinputlisting[language=Python, firstline=9, lastline=17,
     caption=Query to generate the knowledge graph., 
     label={lst:script5}
 ]{code/queries.gql}
-% caption=Consulta para generar un grafo de conocimiento,
-% label={lst:script5}]{code/queries.gql}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=8.8cm]{figures/allrel.png}
     \caption{Knowledge graph in Grakn.}
-    % \caption{Grafo en Grakn}
     \label{fig:grafGra}
 \end{figure}
 
@@ -42,38 +29,19 @@ information is related to the \textit{background} of the relation of objects
 and is usually used when making inferences, better known as 
 \textit{automatic reasoning}. We must point out that this work only 
 uses explicit relationships.
-% La información explícita que se obtiene de las aristas explica por qué se 
-% determinó relacionar los objetos. En la mayoría de los casos es por la 
-% naturaleza de la \textit{query} que se ejecuta. Por otra parte, la información 
-% implícita esta relaciona con el \textit{background} de la relación los objetos 
-% y se suele utilizar al realizar inferencias, mejor conocido como 
-% \textit{razonamiento automático}. Cabe mencionar que en este trabajo solo se 
-% trabaja con relaciones explícitas.
 
 Figure \ref{fig:ReGra} shows the relationship \textit{rel-topunder} between the 
 bed and footboard which can be expected while finding the object ``footboard'' 
 under the object ``bed'' and the object ``bed'' in top of the ``footboard''. 
 Also, in the same image, the \textit{rel-abelow} relationship between footboard 
 and carpet can be seen similarly to the previous one.
-% La Figura \ref{fig:ReGra} muestra la relación \textit{rel-topunder} entre 
-% la cama y el pie de cama (bed-footboard), lo que indica que se espera encontrar 
-% al objeto ''pie de cama'' debajo del objeto ''bed'' y al objeto ''bed'' sobre 
-% el ''footboard''. Asimismo, en la misma imagen se aprecia de manera similar a 
-% la anterior la relación \textit{rel-abelow} entre footboard y carpet.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=8.4cm]{figures/realcionGrafo.jpeg}
     \caption{Relation bed-footboard, footboard-carpet.}
-    % \caption{Relación bed-footboard, footboard-carpet}
     \label{fig:ReGra}
 \end{figure}
-
-%% NEW 
-% a) uno al final en la sección de resultados, después de la Fig. 12, en el que 
-% se clarifique el por qué fue necesario hacer este estudio de KG para la 
-% caracterización de objetos de un determinado espacio interior de ocupación 
-% humana, como es una habitación de una vivienda.
 
 This work is a contribution to the categorization of the semantic context in 
 computer vision since it establishes the tools and a baseline in spatial 
