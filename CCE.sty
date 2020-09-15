@@ -1,0 +1,20 @@
+
+\def\ps@IEEEtitlepagestyle{\def\@oddfoot{
+    % 978-1-7281-8987-1/20/$31.00 ©2020 IEEE
+    \footnotesize 978-1-7281-8987-1/20/\$31.00 \copyright 2020 IEEE\hfill}%
+    \let\@evenfoot=\@oddfoot%
+\ifCLASSOPTIONconference%
+    \def\@oddhead{\parbox{.9\textwidth}{
+        % 2020 17th International Conference on Electrical Engineering, 
+        % Computing Science and Automatic Control (CCE) Mexico City, Mexico.  
+        % November 11-13, 2020
+        \small 2020 17th International Conference on Electrical Engineering,  
+        Computing Science and Automatic Control (CCE)\hfill\\ Mexico City, 
+        Mexico November 11-13, 2020 %
+September 11-13, 2019\hfill}}%
+    \let\@evenhead=\@oddhead%
+   \else
+   \def\@oddhead{\hbox{}\scriptsize\leftmark \hfil \thepage}%
+   \def\@evenhead{\scriptsize\thepage \hfil \leftmark\hbox{}}%
+\fi
+}
