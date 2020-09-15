@@ -36,9 +36,24 @@ database that uses intuitive\footnote{Refers to the definition of types,
 properties and relationships between existing entities in a given context.} 
 ontology\footnote{It should not be seen from the side of philosophy, but as a 
 branch of computer science.}  to model complex data, which serves as a 
-knowledge base for cognitive systems \cite{dbengines}. On the other side, 
-\textit{Graql} is a knowledge-oriented declarative graph query language that 
-retrieves knowledge explicitly.
+knowledge base for cognitive systems \cite{dbengines}. 
+%% Fig description
+In figure \ref{fig:arch}, at the bottom we can see the Grakn system layer, 
+which is made of Apache technologies: %
+i) \textit{HBase}\footnote{Cassandra database servers the same purposes. It is 
+a non-relational database that is distinguished by its speed, scale, 
+and simplicity in design.} is a distributed, scalable, big data store databse, 
+ii) \textit{Spark} for distributed processing system used for 
+big data workloads.
+iii) \textit{Hadoop} allows us to hanlde distributed processing of large data 
+sets across clusters of computers using simple programming models.
+This 3 technologies are the tools for \textit{Tinkerpop} to create the graph 
+structure. At the right side of figure \ref{fig:arch} we have \textit{Kafka},
+and its main function is to help the Grakn software to make graph data analytics
+On the other hand, at the top of figure \ref{fig:arch} we have
+\textit{Graql},it can be seen as a wrapper or friendly interface of the Grakn
+system layer. Formaly, it is a knowledge-oriented declarative graph query 
+language that retrieves knowledge in a explicit or implicit way.
 % De manera general, se puede ver a \textit{Grakn} como una base de datos 
 % distribuida, hiper-relacional que utiliza una  ontología\footnote{No debe 
 % verse desde el lado del la filosofía, sino como una rama de las ciencias de 
@@ -52,9 +67,7 @@ retrieves knowledge explicitly.
 Grakn was designed to be integrated with other technologies that allow it to 
 function in a distributed manner. In addition, it is a great complement to 
 Natural Language Processing (NLP) and Machine Learning (ML) systems 
-\cite{grakn-youtube}. It is also important to note that the data is stored in 
-Apache Cassandra, a non-relational database that is distinguished by its speed, 
-scale, and simplicity in design.
+\cite{grakn-youtube}.
 % Grakn esta diseñado para su integración con otras tecnologías que le permitan 
 % funcionar de manera distribuida. Además, es un gran complemento para sistemas 
 % de Natural Languaje Processing (NLP) y Machine Learning (ML) 
