@@ -1,0 +1,215 @@
+= CCE 2020
+Creado por Rodrigo Francisco <rhodfra@gmail.com>
+Version 1.0, 10.11.2020
+:description: CCE 2020 paper repository
+:keywords: cce2020,knowledge graphs, computer vision, object recognition
+// :sectnums: 
+// Configuracion de la tabla de contenidos
+:toc: 
+:toc-placement!:
+:toclevels: 4                                          
+:toc-title: Contents of the repository
+
+// Ruta base de las imagenes
+:imagesdir: ./README.assets/ 
+
+// Resaltar sintaxis
+:source-highlighter: pygments
+
+// Iconos para entorno local
+ifndef::env-github[:icons: font]
+
+// Iconos para entorno github
+ifdef::env-github[]
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+*2020 17th International Conference on Electrical Engineering, Computing 
+Science and Automatic Control*
+
+toc::[]
+
+== About the paper
+
+*Characterization of Objects in Indoor Spaces of Human Occupation Using 
+Knowledge Graphs*
+
+.You can read the paper in the following links
+* https://github.com/rhofp/cce2020/blob/master/revisions/PID6614115.pdf[Vía this reposity]
+
+_You also have access to the structure of the paper and the LaTeX source code_,
+but this is discuss in <<LaTeX Conference Template,here>>
+
+=== Authors
+
+- mailto:holmesrodrigo@comunidad.unam.mx[Rodrigo Francisco]
+- mailto:gmoleroca@fi-b.unam.mx[Guillermo Molero-Castillo]
+
+=== Abstract
+
+This paper proposes a knowledge graph to describe
+the semantic relationships of objects present in an indoor space,
+such as a bedroom in a house. We base our work in the rep-
+resentation model Object1–Predicate–Object2. In the predicate,
+we consider spatial relationships such as above, below, under,
+on top, next to, in, has, in front, and behind. To fulfill our
+purpose, we used the Grakn NoSQL database, which allows
+defining a knowledge graph schema of type entity-relation. The
+knowledge graph obtained needs a previously identified object in
+order to start looking for the correct relationships. That object
+is considered as input to the algorithm. The information on the
+semantic relationship has proved effectiveness in characterizing
+objects using Grakn, through which it was possible to charac-
+terize objects and their relationships based on the principles of
+knowledge representation.
+
+=== Keywords
+
+Knowledge graphs, Grakn, indoor spaces, objects, semantic relationships.
+
+image::portada.png[scaledwidth="10%"]
+
+=== Sections 
+
+. Introduction
+. Background
+. Method
+. Result
+. Conclusion
+. References
+
+== About CCE
+
+The CCE is the International *Conference* on electrial engineering, computing
+science and automatic control.
+
+The CCE is a conference run by the CINVESTAV  of Instituto Polítecnico Nacional (IPN)
+
+The official website is https://cce.cinvestav.mx/index.php
+
+* The conference was made on November 11-13, 2020. 
+* It was supposed to be at Mexico City, Mexico. Because of the current circunstances, the event took place on online.
+* The Fee was arround 2500.00 mexican pesos, but at the end was free of charge.
+
+Some other relevant details from the official page are:
+
+The principal goal of CCE is to provide a forum for the free discussion  and interchange of research and development experiences and ideas in the fields of electrical-electronics engineering, computer science  and automatic control.
+
+This conference also offers an opportunity for younger researchers and students to meet more experienced colleagues from differents parts of the world. Conference content will be submitted for inclusion into IEEE Xplore as well as other Abstracting and Indexing (A&I)  databases.
+
+Submitted manuscripts *should be six (6) pages* or four (4) pages in IEEE two-column format, including figures, tables, and references.
+
+== About the process
+
+Since the manuscript had to be in english I have to document all the work in
+english to mantain consistency. So, I will brief the general steps and some ideas
+to have in mind if whoever reads this wants to participate.
+
+_The CCE walks you through all the process, but it is always better to have 
+the general sight_
+
+=== Conference requirements
+
+The first thing I remembered that I had to do was to check if my work feat
+the conference requirements. To do so, I check the specifications at https://cce.cinvestav.mx/author-information[Author Information CCE]
+
+The link content a very wide explanations of all the paper submision 
+requirements. Let's summary it:
+
+==== Phase 1: Paper submission
+
+The conference is not explicitly divided by phases But I think is a better way
+to explain.
+
+.Requirements part 1
+* The paper has to be in *english*
+* There is a submission format your document has to have.
+** This format can be either in word or in LaTeX.
+** To be honest, A the majority of autors tend to use LaTeX
+** The website provides you the links of each template, however this 
+repository covers that point in <<LaTeX Conference Template,this section>>
+
+Once you cover the format and have a proper styling ad grammar correction you
+must *submit your paper*, let's see the requirements for that.
+
+.Requirements part 2
+* You must have en *EasyChair* account. 
+** This is the system design to submit your paper an where you'll get feedback
+** https://easychair.org/account/signin?l=8mRNftZW7cJuYm5wsvnl4W#[Click here to go to EasyChair login page]
+// (username: rhodstar)
+* Make sure to fullfill all the requirements such as:
+** Correct bibliography format
+** Correct keywords
+** Correct emails
+
+==== Phase 2: Pre-accepted and  accepted Papers 
+
+You have to receive an email telling whether or not your paper is pre-accepted,
+accepted or rejected.
+
+I think most of the promising paper tend to be in pre-accepted phase, which 
+means your paper is good but you need to attend the reviewers comments in order 
+to be accepted.
+
+Attend the comments for improvements as suggested by reviewers and once again
+send the document through *Easy Chair*
+
+==== Phase 3: Finally accepted
+
+This phase means your paper is officially accepted. There are a couple of 
+things that need to be done
+
+.Requirements part 3
+* The paper need copyright information. With the LaTeX template it is very 
+easy. For more information see <<LaTeX Conference Template>>
+* After you added the copyright, you need to verify that your paper fulfill 
+*IEE Xplore format*. This process has been automated in the 
+https://www.pdf-express.org/[IEEE PDF-Express site]
+** You need to create an account which is bind with the conference ID.
+
+[WARNING]
+====
+Before submiting your paper to pdf-express double check the format
+because you only have 10 tries. After that you need to purchase to continue
+using it.
+
+This point annoyed me a lot because:
+
+* I thought I may need more tries
+* Log error messages wasn't quite clear
+====
+
+.My mistakes
+* I was using _url_ latex package, which I think is not supported by pdf-express
+* My bibliography did not have the apropiate format.
+** I have to review IEEE Citation format ath 
+https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf[this link]
+
+==== Phase 4: The presentation
+
+This phase was pretty straight foward.
+I made a presentation with LaTeX (but this is optional), 
+// you can see it at <<beamer.pdf>>
+
+.Requirements part 5
+* Oral presentation is in english
+* Maximum time is 15 minutes and 5 minutes for questions
+
+=== What you get?
+
+* Knowlegde of how to write and submit a paper
+* A paper recognition, which is 
+// [here].
+
+=== LaTeX Conference Template
+
+=== Important links summary
+
+* https://cce.cinvestav.mx/author-information[Paper conference requirements]
+* https://easychair.org/account/signin?l=gYF0BKoewHaR0S00rCzO6T#[EasyChair login page]
+* https://www.pdf-express.org/[IEEE PDF eXpress (format validation)]
+* https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf[IEEE citation reference]
