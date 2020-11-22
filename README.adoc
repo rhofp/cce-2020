@@ -127,9 +127,9 @@ to explain.
 
 .Requirements part 1
 * The paper has to be in *english*
-* There is a submission format your document has to have.
+* There is a submission format your document has to have:
 ** This format can be either in word or in LaTeX.
-** To be honest, A the majority of autors tend to use LaTeX
+** To be honest, the majority of autors tend to use LaTeX
 ** The website provides you the links of each template, however this 
 repository covers that point in <<LaTeX Conference Template,this section>>
 
@@ -206,6 +206,65 @@ I made a presentation with LaTeX (but this is optional),
 // [here].
 
 === LaTeX Conference Template
+
+In this repository I stored all the files I used to create my final paper, so I'll explain them as detail as I can.
+
+First thing you need to know that you can pull official 
+LaTeX template from 
+https://www.ieee.org/conferences/publishing/templates.html[here]
+
+There are diferent templates for different purposes or events.
+In this case we need *conference* template (other ieee formats
+are _journal article_).
+
+In the above link you will find the *MS word* and *LateX* 
+templates. However, the LaTeX template link take you to 
+_Overleaf page_.
+
+To save time you can click here to go to 
+https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn[overleaf LaTeX template]
+
+The alternative option is forking this repositoy. In fact I
+think is the best option since original template is just a 
+startfile with no formal file structure, this repository has
+the following structure:
+
+[source,sh]
+----
+├── assets
+│   └── beamer
+├── code
+├── conference
+├── fibeamer
+│   ├── logo
+│   └── theme
+├── figures
+├── README.assets
+├── revisions
+└── sections
+    ├── 00-abstract.tex
+    ├── 01-introduction.tex
+    ├── 02-background.tex
+    ├── 03-method-part-01.tex
+    ├── 04-results.tex
+    ├── 05-conclusions.tex
+    └── 06-references.tex
+└── README.adoc
+└── main.tex
+└── beamer.tex
+├── beamerthemefibeamer.sty
+└── CCE.sty
+----
+
+.Explanation
+* _sections_ directory has a file per the final paper sections
+in orden not to have a very big file.
+* _figures_ is the directory where all images and other tables are stored.
+
+.CCE.sty
+* This file automatictly adds the copyright and the header
+of your paper.
+* Make sure to adjust with the corresponding information.
 
 === Important links summary
 
